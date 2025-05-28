@@ -1,0 +1,35 @@
+.layout
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "h h h"
+                        "sb1 m sb2 "
+                        "f f f";
+}
+
+.layout div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+   grid-area: h;
+   background-color: blueviolet;
+}
+.Sidebar1{
+    grid-area: sb1;
+    background-color: aqua;
+}
+.main{
+    grid-area: m;
+    background-color: brown;
+}
+.sidebar2{
+    grid-area: sb2;
+    background-color: chartreuse;
+}
+.footer{
+    grid-area: f;
+    background-color: chocolate;
+}

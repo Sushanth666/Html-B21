@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calculator {
+  display: flex;
+  flex-direction: column; 
+  width: 300px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.display {
+  background-color: #eee; 
+  padding: 15px; 
+  text-align: right;
+  font-size: 24px; 
+  margin-bottom: 10px; 
+  border-radius: 3px; 
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column; 
+}
+
+.memory-functions,
+.controls,
+.number-pad,
+.operators {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  margin-bottom: 5px; 
+}
+.number-pad button {
+  flex-basis: calc(33.33% - 10px); 
+  margin: 5px;
+  padding: 10px;
+  font-size: 18px; 
+  border: 1px solid #ddd; 
+  border-radius: 3px; 
+  box-sizing: border-box; 
+}
+
+.memory-functions button,
+.controls button {
+  flex-basis: calc(25% - 10px); 
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px; 
+  border: 1px solid #ddd; 
+  border-radius: 3px; 
+  box-sizing: border-box;
+}
+
+
+
+.operators button {
+  flex-basis: calc(25% - 10px); 
+  margin: 5px;
+  padding: 15px;
+  font-size: 20px; 
+  border: 1px solid #ddd; 
+  border-radius: 3px; 
+  box-sizing: border-box;
+}
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">0</div>
+        <div class="buttons">
+          <div class="memory-functions">
+            <button>mc</button>
+            <button>mr</button>
+            <button>m-</button>
+            <button>m+</button>
+          </div>
+          <div class="controls">
+            <button>AC</button>
+            <button>√x</button>
+            <button>%</button>
+          </div>
+          <div class="number-pad">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>0</button>
+            <button>π</button>
+            <button>x^y</button>
+            <button>R2</button>
+            <button>R0</button>
+            <button>+/-</button>
+          </div>
+          <div class="operators">
+            <button>×</button>
+            <button>÷</button>
+            <button>-</button>
+            <button>+</button>
+            <button>=</button>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
